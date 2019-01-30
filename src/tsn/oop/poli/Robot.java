@@ -39,7 +39,7 @@ public class Robot {
 
     public static void main(String[] args) {
         Robot myRobot = new Robot();
-        // вызов полиморфного метода с разными параметрами
+        // вызов полиморфных (перегруженных) методов с разными параметрами
         myRobot.activation();
         myRobot.activation("Neo");
         myRobot.activation(3);
