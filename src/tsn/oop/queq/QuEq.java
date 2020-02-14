@@ -48,7 +48,12 @@ public class QuEq {
 
     @Override
     public String toString() {
-        return "Решенние для " + "a=" + a + ", b=" + b + ", c=" + c + ':';
+        String s = "Решенние для " + "a=" + a + ", b=" + b + ", c=" + c +":\t";
+        if (solutionQuEq != null) {
+            return s + solutionQuEq+"\n";
+        } else {
+            return s + "не существует\n";
+        }
     }
 
 }

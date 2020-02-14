@@ -22,4 +22,11 @@ public class SolutionQuEq {
         return x2;
     }
 
+    // Переопределение метода для распечатки объекта
+    @Override
+    public String toString() {
+           return String.format("x1=%.3f   x2= %.3f", getX1(), getX2());
+    }
+
+    
 }
