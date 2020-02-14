@@ -6,6 +6,10 @@ public class QuEq {
     private double a, b, c; // Входные переменные
     private SolutionQuEq solutionQuEq; // Ответы x1 и x2
 
+    {
+        solutionQuEq = null;
+    }
+
     // Конструктор класса с тремя входными параметрами
     public QuEq(double a, double b, double c) {
         this.a = a;
@@ -15,16 +19,14 @@ public class QuEq {
         try {
             double x1 = (-b + Math.sqrt(d)) / (2 * a);
             double x2 = (-b - Math.sqrt(d)) / (2 * a);
-            if (!(Double.isNaN(x1)) && (!Double.isInfinite(x1)) &&
-                    (!(Double.isNaN(x2)) && (!Double.isInfinite(x2)))) {
+            if (!(Double.isNaN(x1)) && (!Double.isInfinite(x1))
+                    && (!(Double.isNaN(x2)) && (!Double.isInfinite(x2)))) {
                 solutionQuEq = new SolutionQuEq(x1, x2);
-            } else {
-                solutionQuEq = null;
             }
         } catch (Exception e) {
-                solutionQuEq = null;
+            solutionQuEq = null;
         }
-        
+
     }
 
     public double getA() {
@@ -42,5 +44,10 @@ public class QuEq {
     public SolutionQuEq getSolutionQuEq() {
         return solutionQuEq;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Решенние для " + "a=" + a + ", b=" + b + ", c=" + c + ':';
+    }
+
 }
