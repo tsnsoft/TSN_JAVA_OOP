@@ -6,6 +6,7 @@ public class QuEq {
     private double a, b, c; // Входные переменные
     private SolutionQuEq solutionQuEq; // Ответы x1 и x2
 
+    // Секция начальной инициализации класса
     {
         solutionQuEq = null;
     }

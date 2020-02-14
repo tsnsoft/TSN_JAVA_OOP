@@ -18,7 +18,7 @@ public class Launch {
 
         QuEq ur = new QuEq(a, b, c); // Создаем класс для решения уравнения
         
-        if (ur.getSolutionQuEq() != null) {
+        if (ur.getSolutionQuEq() != null) { // Проверка наличия рещения
             System.out.println(ur);
             System.out.format("x1=%.3f%nx2= %.3f%n", 
                     ur.getSolutionQuEq().getX1(), ur.getSolutionQuEq().getX2());
