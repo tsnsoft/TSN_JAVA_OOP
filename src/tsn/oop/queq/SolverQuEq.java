@@ -1,18 +1,17 @@
 package tsn.oop.queq;
 
-// Класс "Квадратное уравнение"
-public class QuEq {
-
-    private double a, b, c; // Входные переменные
-    private SolutionQuEq solutionQuEq; // Ответы x1 и x2
+// Класс "Решатель квадратного уравнения"
+public class SolverQuEq {
+    private double a, b, c; // Входные данные
+    private AnswerQuEq answerQuEq; // Ответы x1 и x2
 
     // Секция начальной инициализации класса
     {
-        solutionQuEq = null;
+        answerQuEq = null;
     }
 
     // Конструктор класса с тремя входными параметрами
-    public QuEq(double a, double b, double c) {
+    public SolverQuEq(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -22,10 +21,10 @@ public class QuEq {
             double x2 = (-b - Math.sqrt(d)) / (2 * a);
             if (!(Double.isNaN(x1)) && (!Double.isInfinite(x1))
                     && (!(Double.isNaN(x2)) && (!Double.isInfinite(x2)))) {
-                solutionQuEq = new SolutionQuEq(x1, x2);
+                answerQuEq = new AnswerQuEq(x1, x2);
             }
         } catch (Exception e) {
-            solutionQuEq = null;
+            answerQuEq = null;
         }
 
     }
@@ -42,15 +41,15 @@ public class QuEq {
         return c;
     }
 
-    public SolutionQuEq getSolutionQuEq() {
-        return solutionQuEq;
+    public AnswerQuEq getSolutionQuEq() {
+        return answerQuEq;
     }
 
     @Override
     public String toString() {
         String s = "Решенние для " + "a=" + a + ", b=" + b + ", c=" + c +":\t";
-        if (solutionQuEq != null) {
-            return s + solutionQuEq+"\n";
+        if (answerQuEq != null) {
+            return s + answerQuEq+"\n";
         } else {
             return s + "не существует\n";
         }
