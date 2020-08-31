@@ -1,4 +1,4 @@
-package tsn.oop.incapsulation;
+package tsn.oop.incapsulation_extends;
 
 import java.awt.Color;
 
@@ -13,6 +13,9 @@ public class Launch {
         System.out.println(cat.getSex());
         System.out.println(cat.getWeight());
         System.out.println(cat);
+        
+        Bobcat bobcat = new Bobcat();
+        bobcat.makeSound();
     }
 
 }

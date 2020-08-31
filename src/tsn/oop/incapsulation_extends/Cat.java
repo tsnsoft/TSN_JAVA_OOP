@@ -1,4 +1,4 @@
-package tsn.oop.incapsulation;
+package tsn.oop.incapsulation_extends;
 
 import java.awt.Color;
 
