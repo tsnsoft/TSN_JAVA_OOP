@@ -3,7 +3,7 @@ package tsn.oop.absclasses_stclass;
 // АБСТРАКТНЫЙ КЛАСС "ЖИВОТНОЕ"
 public abstract class AAnimal {
 
-    public String name; // может содержать поля
+    private String name; // может содержать поля
 
     public abstract void makeYourSound(); // метод без реализации (абстрактный)
 
