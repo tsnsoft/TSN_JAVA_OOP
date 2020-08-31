@@ -1,4 +1,4 @@
-package tsn.oop.absclasses;
+package tsn.oop.absclasses_stclass;
 
 // АБСТРАКТНЫЙ КЛАСС "ЖИВОТНОЕ"
 public abstract class AAnimal {

@@ -1,4 +1,4 @@
-package tsn.oop.absclasses;
+package tsn.oop.absclasses_stclass;
 
 public class Cat extends AAnimal {//наследование от животного, чтобы получить еще более конкретное животное
 
