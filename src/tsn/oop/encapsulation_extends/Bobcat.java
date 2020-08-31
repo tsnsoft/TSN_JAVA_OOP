@@ -1,4 +1,4 @@
-package tsn.oop.incapsulation_extends;
+package tsn.oop.encapsulation_extends;
 
 // Класс "Рысь" наследует класс "КОШКА"
 

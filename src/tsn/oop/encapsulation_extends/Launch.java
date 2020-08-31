@@ -1,4 +1,4 @@
-package tsn.oop.incapsulation_extends;
+package tsn.oop.encapsulation_extends;
 
 import java.awt.Color;
 
@@ -16,6 +16,10 @@ public class Launch {
         
         Bobcat bobcat = new Bobcat();
         bobcat.makeSound();
+        bobcat.setWeight(12);
+        
+        // cat.makeSound(); // Так делать нельзя
+        // cat.weight = -777; // Так делать нельзя
     }
 
 }
