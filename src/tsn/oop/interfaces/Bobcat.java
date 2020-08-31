@@ -9,5 +9,9 @@ public class Bobcat extends Cat implements IAnimal {
     public void makeYourSound() {
         System.out.println("Rrrr");
     }
+    
+    public void jump() {
+        System.out.println("jump!");
+    }
 
 }

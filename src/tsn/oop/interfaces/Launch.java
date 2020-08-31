@@ -16,7 +16,8 @@ public class Launch {
         for (IAnimal animalArray1 : animalArray) {
             animalArray1.makeYourSound();
         }
-
+        Bobcat bobcat2 = new Bobcat();
+        bobcat2.jump();
     }
 
 }
