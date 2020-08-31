@@ -1,6 +1,6 @@
 package tsn.oop.interfaces;
 
-public class Animals {
+public class Launch {
 
     public static void main(String[] args) {
         IAnimal lion = new Lion();

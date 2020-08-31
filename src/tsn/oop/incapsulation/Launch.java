@@ -2,7 +2,7 @@ package tsn.oop.incapsulation;
 
 import java.awt.Color;
 
-public class MyCat {
+public class Launch {
 
     public static void main(String[] args) {
         Cat cat = new Cat();
