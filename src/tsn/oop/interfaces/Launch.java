@@ -6,7 +6,8 @@ public class Launch {
         IAnimal lion = new Lion();
         IAnimal dog = new Dog();
         IAnimal cat = new Cat();
-        IAnimal[] animalArray = {lion, dog, cat};// мы помещаем в масив IAnimal другие классы и компилятор не ругается
+        IAnimal bobcat = new Bobcat();
+        IAnimal[] animalArray = {lion, dog, cat, bobcat};// мы помещаем в масив IAnimal другие классы и компилятор не ругается
         // главное, чтобы эти классы имплементировали интерфейс. Так можно делать и с абстрактными классами
         for (int i = 0; i < animalArray.length; i++) {
             animalArray[i].makeYourSound(); // вызовет указанный метод для каждого класса
