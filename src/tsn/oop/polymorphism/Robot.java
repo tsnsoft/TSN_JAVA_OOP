@@ -1,4 +1,4 @@
-package tsn.oop.poli;
+package tsn.oop.polymorphism;
 
 import java.util.Date;
 
