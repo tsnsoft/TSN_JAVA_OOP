@@ -2,9 +2,10 @@ package tsn.oop.incapsulation;
 
 import java.awt.Color;
 
+// Класс "Кошка"
 public class Cat {
 
-    private Color color;//мы делаем ограничение доступа к полям
+    private Color color;//мы делаем ограничение доступа к полям класса
     private int weight;
     private String sex;
 
@@ -20,7 +21,8 @@ public class Cat {
         return weight;
     }
 
-    public void setWeight(int weight) {// если кто-то укажет весь меньше 0, тогда программа примет по-умолчанию 
+    public void setWeight(int weight) {// если кто-то укажет вес меньше 0, 
+        // тогда программа примет значение по-умолчанию 
         // вес по-умолчанию: 4
         if (weight <= 0) {
             this.weight = 4;
@@ -33,7 +35,8 @@ public class Cat {
         return sex;
     }
 
-    public void setSex(String sex) {// если пол не совпадает с ключевыми словами, тогда задаем значение мужской пол
+    public void setSex(String sex) {// если пол не совпадает с ключевыми словами, 
+        // тогда задаем значение мужской пол
         if (sex.equals("man") || sex.equals("woman")) {
             this.sex = sex;
         } else {

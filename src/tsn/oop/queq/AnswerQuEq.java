@@ -3,8 +3,8 @@ package tsn.oop.queq;
 // Класс "Ответ квадратного уравнения"
 public class AnswerQuEq {
 
-    private double x1; // Скрытое поле x1
-    private double x2; // Скрытое поле x2
+    private double x1; // Скрытое вещественное поле x1
+    private double x2; // Скрытое вещественное поле x2
 
     // Конструктор с 2-мя параметрами
     public AnswerQuEq(double x1, double x2) {

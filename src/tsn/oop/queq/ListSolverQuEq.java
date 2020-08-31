@@ -3,7 +3,7 @@ package tsn.oop.queq;
 import java.util.ArrayList;
 import java.util.List;
 
-// Класс списка квадратных уравнеий с их решениями
+// Класс коллекции-списка квадратных уравнеий с их решениями
 public class ListSolverQuEq {
 
     private List<SolverQuEq> listSolverQuEq; // Список объектов квадратных уравнений
@@ -21,9 +21,9 @@ public class ListSolverQuEq {
     // Переопрелеление метода распечатки объекта
     @Override
     public String toString() {
-        StringBuilder s = new StringBuilder();
-        for (int i = 0; i < listSolverQuEq.size(); i++) {
-            s.append(listSolverQuEq.get(i));
+        StringBuilder s = new StringBuilder(); // Текстовая переменная с возможностью изменять содержимое
+        for (int i = 0; i < listSolverQuEq.size(); i++) { // цикл по элементам коллекции-списка
+            s.append(listSolverQuEq.get(i)); // добавляем в тестовую переменную результаты по каждрму уравнению
         }
         return s.toString();
     }
