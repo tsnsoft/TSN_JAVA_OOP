@@ -1,7 +1,7 @@
 package tsn.oop.absclasses;
 
 // АБСТРАКТНЫЙ КЛАСС "ЖИВОТНОЕ"
-public abstract class Animal {
+public abstract class AAnimal {
 
     public String name; // может содержать поля
 
@@ -11,4 +11,12 @@ public abstract class Animal {
         System.out.println("Hello, I'm " + name);
     }
 
+    public String getName() { // метод с реализацией
+        return name;
+    }
+
+    public void setName(String name) { // метод с реализацией
+        this.name = name;
+    }
+ 
 }
