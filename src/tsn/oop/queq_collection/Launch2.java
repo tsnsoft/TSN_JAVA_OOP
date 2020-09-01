@@ -1,4 +1,4 @@
-package tsn.oop.queq;
+package tsn.oop.queq_collection;
 
 public class Launch2 {
 
