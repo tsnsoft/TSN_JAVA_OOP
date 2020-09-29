@@ -1,4 +1,4 @@
-package tsn.oop.innerclass;
+package tsn.oop.innerclass.demo2;
 
 import java.util.Scanner;
 

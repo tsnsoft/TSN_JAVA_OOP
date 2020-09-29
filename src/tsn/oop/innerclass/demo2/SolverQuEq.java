@@ -1,4 +1,4 @@
-package tsn.oop.innerclass;
+package tsn.oop.innerclass.demo2;
 
 // Класс "Решатель квадратного уравнения"
 public class SolverQuEq {
